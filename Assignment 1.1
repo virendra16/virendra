@@ -1,0 +1,24 @@
+Q1 variours sources of big data
+Archives,Docs, Media,Data Storage,Business Apps,Public Web,Machine Log Data,Sensor Data.
+
+Q2 3V's of Big Data
+Volume(Data Size),Variety(Data Sources),Velocity(Speed of Change) are the 3V's of Big Data.
+
+Q3 Horizontal Scaling and Vertical Scaling
+Horizontal scaling: In horizontal scaling We are thinking about adding more CPU cores, more Storage and more RAM to that instance to improve the query performance.
+This is what we called Vertical scaling(Scaling up) , means adding more CPU power and storage resource to a single instance.All of your data is in a single machine. No need to manage multiple instance
+ Advantage: All of your data is in a single machine, No need to manage multiple instance.
+ Disadvantag: The problem is the cost efficiency,a powerful machine having large number of CPU and 
+ higher RAM capacity is costlier than a set of small size instances.
+ 
+ Vertical Scaling:Horizontal scaling divides the data set and distributes the data over multiple servers, or shards. 
+ Each shard is an independent database, and collectively, the shards make up a single logical database.
+ Advantage: All of your data is in smaller chunks so program can process them very fast with parallel job distribution among all instance.
+Disadvantage:The problem is about managing those instances and the complex distributed architecture.
+
+
+Q4 Need and Working of Hadoop
+ As the amount of available data grows, the problem of managing the information becomes more difficult, which can lead to 
+information overload. HAdoop is a slution of Data explosion.
+The way HDFS works is by having a main « NameNode » and multiple « data nodes » on a commodity hardware cluster. All the nodes are usually organized within the same physical rack in the data center.
+Data is then broken down into separate « blocks » that are distributed among the various data nodes for storage. 
